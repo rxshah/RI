@@ -41,3 +41,7 @@ Each row names a choice and the reason for it.
 | Token budget | In | Extends `principle-guard-the-context-window`. Each routine has a cost ceiling, stays silent when nothing changed, and flags creep in the monthly review. |
 | `tdd`, `typescript-best-practices`, `no-comments`, `architect`, `arena`, `make-bot-ui`, `show-me-your-work`, `how`, `why`, `teach` | Off the default path | Use these when a cloud agent writes code under a repo's own AGENTS.md. |
 | `opening-a-pr`, `worktree-cleanup`, `shipping` | Off the default path | Use these `poteto-mode` playbooks when a cloud agent writes code under a repo's own AGENTS.md. |
+
+## License
+
+MIT. See LICENSE.
