@@ -1,2 +1,53 @@
 # RI
-slim agent toolkit for a non-coding Grok Bot fleet: 11 principles, verification and formal checks, blast-radius, tinycharts, and lean house rules.
+
+RI is the skill a non-coding bot fleet loads for tuning, scripting, auditing, and design. It points at pstack skills by name. pstack stays installed.
+
+pstack is built for software teams. This fleet tunes, scripts, audits, and designs. The full plugin costs tokens in skill selection and adds noise. RI keeps the skills this fleet uses, points at tinycharts, and adds five house rules.
+
+## Install
+
+Do these four steps.
+
+1. Copy `skills/ri` into the agent's skills folder.
+2. Install the pstack plugin.
+3. Install the tinycharts skill separately. Keep its files out of this repo.
+4. Install the continual-learning plugin for the one line in RI that names it.
+
+## What is in and what is out
+
+Each row names a choice and the reason for it.
+
+| Names | Place | Reason |
+| --- | --- | --- |
+| `in-your-own-words`, `sharpen` | In | Use these at the start of a run. Use `sharpen` for design or tuning. |
+| `principle-never-block-on-the-human`, `principle-subtract-before-you-add`, `principle-encode-lessons-in-structure`, `principle-fix-root-causes` | In | Use these on every run. |
+| `principle-laziness-protocol`, `principle-make-operations-idempotent`, `principle-build-the-lever`, `principle-sequence-verifiable-units`, `principle-model-the-domain`, `principle-separate-before-serializing-shared-state`, `principle-migrate-callers-then-delete-legacy-apis` | In | Use these when the run tunes or scripts. |
+| `principle-redesign-from-first-principles`, `principle-prove-it-works`, `principle-explain-the-number`, `principle-boundary-discipline`, `principle-guard-the-context-window`, `principle-attack-the-premise` | In | The fleet already uses these. |
+| `blast-radius` | In | Run it before a change to a shared script, skill, or routine. |
+| `create-verification-skill`, `maintain-verification-skill` | In | Run `maintain-verification-skill` during weekly fleet care. |
+| `statechart`, `create-formal-verification-skill`, `maintain-formal-verification-skill` | In | Use these for scripts and state machines. |
+| `interrogate` | In | Use it when a design is contested. |
+| `swarm` | In | Use it to fan work out. |
+| `correct` | In | Use it in the monthly self-review to find repeated mistakes. |
+| `recall`, `ketchup` | In | Use these for a long chat. |
+| `unslop` | In | Use it on text the owner reads. |
+| `tinycharts` | In | Use it for a hand-drawn playable diagram of how something works. |
+| `automate-me`, `continual-learning` | On request | Load these only when asked. `continual-learning` is its own plugin. |
+| Lean memory | In | Extends `principle-encode-lessons-in-structure`. Anything remembered twice becomes a rule, a wiki line, or a script. Drop journal lines already captured elsewhere. |
+| Lean code | In | Extends `principle-subtract-before-you-add`. Delete first. A script update leaves fewer lines or states why not, and only the latest backup stays. |
+| Fail fast | In | Extends `principle-fix-root-causes`. A script exits nonzero with a reason, uses no silent fallback or quiet retry, and escalates after 3 failures. |
+| Ask only if it cannot be undone | In | Extends `principle-never-block-on-the-human`. Act when the work is reversible. Ask before spending, sending, or deleting. |
+| Token budget | In | Extends `principle-guard-the-context-window`. Each routine has a cost ceiling, stays silent when nothing changed, and flags creep in the monthly review. |
+| `tdd`, `typescript-best-practices`, `no-comments`, `architect`, `arena`, `make-bot-ui`, `show-me-your-work`, `how`, `why`, `teach` | Off the default path | Use these when a cloud agent writes code under a repo's own AGENTS.md. |
+| `opening-a-pr`, `worktree-cleanup`, `shipping` | Off the default path | Use these `poteto-mode` playbooks when a cloud agent writes code under a repo's own AGENTS.md. |
+| `benchmark-checklist` | Out | It vets a perf measurement before a reported speedup. |
+| `principle-experience-first`, `principle-exhaust-the-design-space` | Out | They cover product and interaction design for a software team. |
+| `principle-foundational-thinking`, `principle-minimize-reader-load`, `principle-outcome-oriented-execution`, `principle-test-behavior-not-implementation`, `principle-type-system-discipline` | Out | They cover types, tests, and code structure. |
+| `bro` | Out | It restates the last message with the jargon removed. |
+| `ketchup-video` | Out | It recaps a chat as a video. Long chats use `ketchup`. |
+| `figure-it-out` | Out | It designs a new playbook for a large software change. |
+| `poteto-help` | Out | It routes among every pstack skill. This fleet routes through RI. |
+| `reflect` | Out | It edits a skill from one chat when someone says reflect. |
+| `setup-pstack` | Out | It is the one-time choice of models for pstack. |
+| `technical-writing` | Out | It covers docs and pull-request prose for a software repo. |
+| `poteto-mode` | Out | Software-team mode. It stays installed. RI names three playbooks inside it for repo code work. |
