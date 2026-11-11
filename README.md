@@ -1,8 +1,8 @@
 # RI
 
-RI is the skill a non-coding bot fleet loads for tuning, scripting, auditing, and design. It points at pstack skills by name. pstack stays installed.
+RI is the skill a non-coding bot fleet loads for tuning, scripting, auditing, and design. It points at [pstack](https://github.com/cursor/plugins/tree/main/pstack) skills by name. pstack stays installed.
 
-pstack is built for software teams. This fleet tunes, scripts, audits, and designs. The full plugin costs tokens in skill selection and adds noise. RI keeps the skills this fleet uses and includes continual-learning. It points at tinycharts and adds five house rules.
+pstack is built for software teams. This fleet tunes, scripts, audits, and designs. The full plugin costs tokens in skill selection and adds noise. RI keeps the skills this fleet uses and includes [continual-learning](https://github.com/cursor/plugins/tree/main/continual-learning). It points at [tinycharts](https://april-zhu.com/tinycharts) and adds five house rules.
 
 ## Install
 
@@ -13,7 +13,7 @@ Do these four steps.
 3. Install the pstack plugin.
 4. Install the tinycharts skill from its author. Keep that kit out of this repo.
 
-## What is in and what is out
+## What is in
 
 Each row names a choice and the reason for it.
 
@@ -41,14 +41,3 @@ Each row names a choice and the reason for it.
 | Token budget | In | Extends `principle-guard-the-context-window`. Each routine has a cost ceiling, stays silent when nothing changed, and flags creep in the monthly review. |
 | `tdd`, `typescript-best-practices`, `no-comments`, `architect`, `arena`, `make-bot-ui`, `show-me-your-work`, `how`, `why`, `teach` | Off the default path | Use these when a cloud agent writes code under a repo's own AGENTS.md. |
 | `opening-a-pr`, `worktree-cleanup`, `shipping` | Off the default path | Use these `poteto-mode` playbooks when a cloud agent writes code under a repo's own AGENTS.md. |
-| `benchmark-checklist` | Out | It vets a perf measurement before a reported speedup. |
-| `principle-experience-first`, `principle-exhaust-the-design-space` | Out | They cover product and interaction design for a software team. |
-| `principle-foundational-thinking`, `principle-minimize-reader-load`, `principle-outcome-oriented-execution`, `principle-test-behavior-not-implementation`, `principle-type-system-discipline` | Out | They cover types, tests, and code structure. |
-| `bro` | Out | It restates the last message with the jargon removed. |
-| `ketchup-video` | Out | It recaps a chat as a video. Long chats use `ketchup`. |
-| `figure-it-out` | Out | It designs a new playbook for a large software change. |
-| `poteto-help` | Out | It routes among every pstack skill. This fleet routes through RI. |
-| `reflect` | Out | It edits a skill from one chat when someone says reflect. |
-| `setup-pstack` | Out | It is the one-time choice of models for pstack. |
-| `technical-writing` | Out | It covers docs and pull-request prose for a software repo. |
-| `poteto-mode` | Out | Software-team mode. It stays installed. RI names three playbooks inside it for repo code work. |
