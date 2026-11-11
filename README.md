@@ -2,16 +2,16 @@
 
 RI is the skill a non-coding bot fleet loads for tuning, scripting, auditing, and design. It points at pstack skills by name. pstack stays installed.
 
-pstack is built for software teams. This fleet tunes, scripts, audits, and designs. The full plugin costs tokens in skill selection and adds noise. RI keeps the skills this fleet uses, points at tinycharts, and adds five house rules.
+pstack is built for software teams. This fleet tunes, scripts, audits, and designs. The full plugin costs tokens in skill selection and adds noise. RI keeps the skills this fleet uses and includes continual-learning. It points at tinycharts and adds five house rules.
 
 ## Install
 
 Do these four steps.
 
-1. Copy `skills/ri` into the agent's skills folder.
-2. Install the pstack plugin.
-3. Install the tinycharts skill separately. Keep its files out of this repo.
-4. Install the continual-learning plugin for the one line in RI that names it.
+1. Copy `skills/ri` and `skills/continual-learning` into the agent's skills folder.
+2. Copy `agents/agents-memory-updater.md` into the agent's agents folder.
+3. Install the pstack plugin.
+4. Install the tinycharts skill from its author. Keep that kit out of this repo.
 
 ## What is in and what is out
 
@@ -31,8 +31,9 @@ Each row names a choice and the reason for it.
 | `correct` | In | Use it in the monthly self-review to find repeated mistakes. |
 | `recall`, `ketchup` | In | Use these for a long chat. |
 | `unslop` | In | Use it on text the owner reads. |
-| `tinycharts` | In | Use it for a hand-drawn playable diagram of how something works. |
-| `automate-me`, `continual-learning` | On request | Load these only when asked. `continual-learning` is its own plugin. |
+| `tinycharts` | In | Use it for a hand-drawn playable diagram of how something works. Install it from its author. Its license forbids redistribution, so this repo does not carry the kit. |
+| `automate-me` | On request | Load it only when asked. It stays in pstack. |
+| `continual-learning` | On request | Load it only when asked. The skill and `agents-memory-updater` are in this repo. |
 | Lean memory | In | Extends `principle-encode-lessons-in-structure`. Anything remembered twice becomes a rule, a wiki line, or a script. Drop journal lines already captured elsewhere. |
 | Lean code | In | Extends `principle-subtract-before-you-add`. Delete first. A script update leaves fewer lines or states why not, and only the latest backup stays. |
 | Fail fast | In | Extends `principle-fix-root-causes`. A script exits nonzero with a reason, uses no silent fallback or quiet retry, and escalates after 3 failures. |
