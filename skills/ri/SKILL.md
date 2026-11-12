@@ -4,6 +4,8 @@ description: Points a non-coding bot fleet at the pstack skills it uses. Load at
 ---
 
 # RI
+Needs the pstack plugin: RI loads its skills by name. `tinycharts` (from its author) and the continual-learning plugin are optional.
+
 Load the named skill. Do not copy it.
 ## Start
 - `in-your-own-words`, then `sharpen` for design or tuning work.

@@ -1,0 +1,13 @@
+{
+  "name": "ri",
+  "displayName": "RI",
+  "version": "1.0.0",
+  "description": "Slim skill index for a non-coding Grok Bot fleet: points tuning, scripting, auditing and design runs at the pstack skills worth loading, plus five lean house rules. Requires the pstack plugin.",
+  "author": { "name": "Rushabh Shah" },
+  "homepage": "https://github.com/rxshah/RI",
+  "repository": "https://github.com/rxshah/RI",
+  "license": "MIT",
+  "keywords": ["ri", "pstack", "principles", "fleet", "tuning", "verification"],
+  "category": "productivity",
+  "skills": "./skills/"
+}

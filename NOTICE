@@ -1,6 +1,6 @@
 # Third-party notice
 
-`skills/continual-learning/SKILL.md` and `agents/agents-memory-updater.md` are copied from the continual-learning plugin.
+`optional/skills/continual-learning/SKILL.md` and `optional/agents/agents-memory-updater.md` are copied from the continual-learning plugin.
 
 MIT License
 
