@@ -45,3 +45,7 @@ Each row names a choice and the reason for it.
 ## Contributing
 
 Changes go through pull requests and are reviewed automatically before merge.
+
+## License
+
+MIT. See LICENSE.
