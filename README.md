@@ -42,6 +42,10 @@ Each row names a choice and the reason for it.
 | `tdd`, `typescript-best-practices`, `no-comments`, `architect`, `arena`, `make-bot-ui`, `show-me-your-work`, `how`, `why`, `teach` | Off the default path | Use these when a cloud agent writes code under a repo's own AGENTS.md. |
 | `opening-a-pr`, `worktree-cleanup`, `shipping` | Off the default path | Use these `poteto-mode` playbooks when a cloud agent writes code under a repo's own AGENTS.md. |
 
+## Contributing
+
+Changes go through pull requests and are reviewed automatically before merge.
+
 ## License
 
 MIT. See LICENSE.
