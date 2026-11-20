@@ -1,6 +1,6 @@
 ---
 name: ri
-description: Points a non-coding bot fleet at the pstack skills it uses. Load at the start of any tuning, scripting, auditing, or design run, and when the owner says /ri.
+description: "Points a non-coding bot fleet at the pstack skills it uses. Input: a tuning, scripting, auditing or design task. Output: the named skills loaded, none copied. Triggers: '/ri', 'tune a bot', 'audit a routine', 'design a script'. Not for: coding in a repo with its own AGENTS.md (use poteto-mode)."
 ---
 
 # RI
@@ -34,3 +34,5 @@ Load the named skill. Do not copy it.
 - `tdd`, `typescript-best-practices`, `no-comments`, `architect`, `arena`, `make-bot-ui`, `show-me-your-work`, `how`, `why`, and `teach`, plus the `opening-a-pr`, `worktree-cleanup`, and `shipping` playbooks in `poteto-mode`. Use them when a cloud agent writes code under a repo's own AGENTS.md.
 ## Voice, approvals, and risk
 - Defer to the owner's own mode skill and wiki.
+
+Done checks (yes/no): started with in-your-own-words? every-run principles loaded? blast-radius run before touching a shared script/skill/routine?
